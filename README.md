@@ -8,7 +8,7 @@ Every time I change something and want to see it in the cluster, the loop is:
 
 code change -> rebuild image -> push -> deploy -> wait for rollout -> check logs -> repeat
 
-Even for this hello-world app that takes ~2 min per cycle. For anything real (bigger images, more replicas, multiple services) it's way worse.
+Even for this hello-world app that takes ~2 min per cycle. For anything real (bigger images, more replicas, multiple services) it's way worse and more expensive. 
 
 mirrord lets you skip all that by running your code locally but with the cluster's network, env vars, and DNS. So you just... edit and re-run.
 
